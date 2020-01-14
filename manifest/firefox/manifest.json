@@ -1,0 +1,66 @@
+{
+    "manifest_version": 2,
+    "name": "Universal Comments",
+    "version": "0.6",
+    "description": "Take only memories, leave only comments",
+    "author": "Willem Liu",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "universal-comments@willim.nl"
+        }
+    },
+    "icons": {
+        "48": "48x48.png",
+        "64": "64x64.png",
+        "72": "72x72.png",
+        "96": "96x96.png",
+        "128": "128x128.png",
+        "144": "144x144.png",
+        "168": "168x168.png",
+        "192": "192x192.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "48": "48x48.png",
+            "64": "64x64.png",
+            "72": "72x72.png",
+            "96": "96x96.png",
+            "128": "128x128.png",
+            "144": "144x144.png",
+            "168": "168x168.png",
+            "192": "192x192.png"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "https://beurs.acc.fd.nl/",
+        "https://dev.fd.nl/",
+        "https://acc.fd.nl/",
+        "https://fd.nl/",
+        "http://*/*",
+        "https://*/*",
+        "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://beurs.acc.fd.nl/*",
+                "https://dev.fd.nl/*",
+                "https://acc.fd.nl/*",
+                "https://beurs.fd.nl/*",
+                "https://fd.nl/*",
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
