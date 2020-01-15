@@ -33,6 +33,7 @@ function App(props: any) {
                 open={opened}
                 onCollapsed={onCollapsed}
                 hideButtonOverlay={props.hideButtonOverlay}
+                themeColor={props.themeColor}
             >
                 <StyledIframe
                     src={`https://universal-comments.willemliu.now.sh?canonical=${encodeURI(

@@ -33,10 +33,19 @@ storage.sync.get(
                       ? window.location.pathname
                       : "");
 
+            let themeColor = "#fff";
+            const themeMeta = document.querySelector(
+                'meta[name="theme-color"]'
+            );
+            if (themeMeta?.getAttribute("content")) {
+                themeColor = themeMeta.getAttribute("content") || "#fff";
+            }
+
             ReactDOM.render(
                 <>
                     <GlobalStyle />
                     <App
+                        themeColor={themeColor}
                         canonical={url}
                         hideButtonOverlay={items.hideButtonOverlay}
                     />
@@ -54,6 +63,5 @@ const GlobalStyle = createGlobalStyle`
     left: 0;
     bottom: 0;
     z-index: 999;
-    background-color: #e6d3c6;
 }
 `;

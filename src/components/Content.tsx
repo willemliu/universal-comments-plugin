@@ -5,6 +5,7 @@ interface Props {
     onCollapsed?: (opened: boolean) => void;
     open?: boolean;
     url: string;
+    themeColor?: string;
     [x: string]: any;
 }
 
@@ -55,7 +56,10 @@ function Content(props: Props) {
     return (
         <>
             {hideButton ? null : (
-                <StyledContent collapsed={collapsed}>
+                <StyledContent
+                    collapsed={collapsed}
+                    themeColor={props.themeColor}
+                >
                     <StyledHeader onClick={toggleCollapse}>
                         Universal Comments{" "}
                         <span>{count ? `(${count})` : ""}</span>
@@ -67,11 +71,16 @@ function Content(props: Props) {
     );
 }
 
-const StyledContent = styled.section<{ collapsed: boolean }>`
+const StyledContent = styled.section<{
+    collapsed: boolean;
+    themeColor?: string;
+}>`
     padding: 1rem;
     box-sizing: border-box;
     height: ${(props: any) => (props.collapsed ? "auto" : "50vh")};
     width: ${(props: any) => (props.collapsed ? "auto" : "100vw")};
+    background-color: ${(props: any) => props.themeColor};
+    filter: invert(0.1) drop-shadow(0px -1px 5px rgba(0, 0, 0, 0.5));
 `;
 
 const StyledHeader = styled.h2`
