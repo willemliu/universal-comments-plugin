@@ -20,21 +20,20 @@
     "license": "ISC",
     "devDependencies": {
         "@types/chrome": "0.0.91",
-        "@types/react": "^16.8.10",
-        "@types/react-dom": "^16.8.3",
-        "@types/styled-components": "^4.1.14",
-        "@types/webpack-env": "^1.13.9",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "@types/styled-components": "^4.4.2",
+        "@types/webpack-env": "^1.15.0",
         "awesome-typescript-loader": "^5.2.1",
         "cpx": "^1.5.0",
-        "cross-env": "^5.2.0",
-        "next": "^9.1.7",
-        "typescript": "^3.4.1",
-        "webpack": "^4.29.6",
-        "webpack-cli": "^3.3.0"
+        "cross-env": "^5.2.1",
+        "typescript": "^3.7.4",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
     },
     "dependencies": {
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
         "styled-components": "^5.0.0"
     }
 }
