@@ -4,6 +4,7 @@
     "description": "Take only memories, leave only comments",
     "main": "fd-universal-comments/content.js",
     "scripts": {
+        "build": "next build",
         "release:chrome": "cpx -p manifest/chrome/manifest.json fd-universal-comments",
         "release:firefox": "cpx -p manifest/firefox/manifest.json fd-universal-comments",
         "test": "echo \"Error: no test specified\" && exit 1",
