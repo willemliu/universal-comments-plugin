@@ -14,8 +14,7 @@ or
 
 ## Usage
 
-Open an article page and click the extension icon to open the article directly
-in the webwriter.
+Open a web page and click the Extension icon to open the comments overlay.
 
 ## Development
 
