@@ -1,5 +1,7 @@
 # universal-comments-extension
 
+Take only memories, leave only comments.
+
 ## Installation
 
 ### Installation Chrome and Opera

@@ -5,8 +5,8 @@
     "main": "fd-universal-comments/content.js",
     "scripts": {
         "build": "next build",
-        "release:chrome": "cpx -p manifest/chrome/manifest.json fd-universal-comments",
-        "release:firefox": "cpx -p manifest/firefox/manifest.json fd-universal-comments",
+        "release:chrome": "cpx -p manifest/chrome/manifest.json universal-comments",
+        "release:firefox": "cpx -p manifest/firefox/manifest.json universal-comments",
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "cross-env NODE_ENV=production webpack --mode production --display-modules -w",
         "watch-dev": "cross-env NODE_ENV=development webpack --mode development --display-modules -w",

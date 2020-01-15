@@ -46,7 +46,7 @@
     ],
     "options_ui": {
         "page": "options.html",
-        "chrome_style": true
+        "browser_style": true
     },
     "content_scripts": [
         {
