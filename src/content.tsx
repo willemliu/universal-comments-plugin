@@ -14,7 +14,8 @@ const storage =
  */
 storage.sync.get(
     {
-        enable: true
+        enable: true,
+        hideButtonOverlay: false
     },
     (items: any) => {
         console.log("Universal Comments enabled", items.enable);
@@ -35,7 +36,10 @@ storage.sync.get(
             ReactDOM.render(
                 <>
                     <GlobalStyle />
-                    <App canonical={url} />
+                    <App
+                        canonical={url}
+                        hideButtonOverlay={items.hideButtonOverlay}
+                    />
                 </>,
                 document.querySelector(".universal-comments-extension")
             );

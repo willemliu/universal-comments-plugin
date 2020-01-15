@@ -26,13 +26,13 @@ function App(props: any) {
 
     return (
         <>
-            {opened}
             <Content
                 url={`https://universal-comments.willemliu.now.sh/api/count?canonical=${encodeURI(
                     props.canonical
                 )}`}
                 open={opened}
                 onCollapsed={onCollapsed}
+                hideButtonOverlay={props.hideButtonOverlay}
             >
                 <StyledIframe
                     src={`https://universal-comments.willemliu.now.sh?canonical=${encodeURI(

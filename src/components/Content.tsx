@@ -11,25 +11,37 @@ interface Props {
 function Content(props: Props) {
     const [count, setCount] = useState(null);
     const [collapsed, setCollapsed] = useState(!props.open);
+    const [hideButton, setHideButton] = useState(
+        props.hideButtonOverlay && collapsed
+    );
 
     useEffect(() => {
-        fetch(props.url, {
-            headers: {
-                "Cache-Control": "no-cache"
-            }
-        })
-            .then((res) => res.json())
-            .then((json) => {
-                if (json.count) {
-                    setCount(json.count);
+        if (!hideButton) {
+            fetch(props.url, {
+                headers: {
+                    "Cache-Control": "no-cache"
                 }
-            });
+            })
+                .then((res) => res.json())
+                .then((json) => {
+                    if (json.count) {
+                        setCount(json.count);
+                    }
+                });
+        }
     }, []);
+
+    useEffect(() => {
+        setHideButton(props.hideButtonOverlay && collapsed);
+    }, [props.hideButtonOverlay, collapsed]);
 
     useEffect(() => {
         setCollapsed(!props.open);
     }, [props.open]);
 
+    /**
+     * Callback
+     */
     useEffect(() => {
         if (props.onCollapsed) {
             props.onCollapsed(collapsed);
@@ -41,12 +53,17 @@ function Content(props: Props) {
     }
 
     return (
-        <StyledContent collapsed={collapsed}>
-            <StyledHeader onClick={toggleCollapse}>
-                Universal Comments <span>{count ? `(${count})` : ""}</span>
-            </StyledHeader>
-            {!collapsed && props.children}
-        </StyledContent>
+        <>
+            {hideButton ? null : (
+                <StyledContent collapsed={collapsed}>
+                    <StyledHeader onClick={toggleCollapse}>
+                        Universal Comments{" "}
+                        <span>{count ? `(${count})` : ""}</span>
+                    </StyledHeader>
+                    {!collapsed && props.children}
+                </StyledContent>
+            )}
+        </>
     );
 }
 

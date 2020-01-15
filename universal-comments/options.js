@@ -4,9 +4,12 @@ const storage =
 // Saves options to chrome.storage.sync.
 function saveOptions() {
     var enable = document.getElementById("enable").checked;
+    var hideButtonOverlay = document.getElementById("hideButtonOverlay")
+        .checked;
     storage.sync.set(
         {
-            enable: enable
+            enable,
+            hideButtonOverlay
         },
         function() {
             // Update status to let user know options were saved.
@@ -24,10 +27,13 @@ function saveOptions() {
 function restoreOptions() {
     storage.sync.get(
         {
-            enable: true
+            enable: true,
+            hideButtonOverlay: false
         },
         function(items) {
             document.getElementById("enable").checked = items.enable;
+            document.getElementById("hideButtonOverlay").checked =
+                items.hideButtonOverlay;
         }
     );
 }
