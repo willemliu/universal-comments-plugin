@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle } from "styled-components";
 import { App } from "./components/App";
+import { lightOrDark } from "./utils/lightOrDark";
 
 declare var chrome: any;
 declare var browser: any;
@@ -39,6 +40,9 @@ storage.sync.get(
             );
             if (themeMeta?.getAttribute("content")) {
                 themeColor = themeMeta.getAttribute("content") || "#fff";
+                if (lightOrDark(themeColor) === "dark") {
+                    themeColor = "#fff";
+                }
             }
 
             ReactDOM.render(
