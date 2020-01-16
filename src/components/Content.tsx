@@ -80,7 +80,8 @@ const StyledContent = styled.section<{
     height: ${(props: any) => (props.collapsed ? "auto" : "50vh")};
     width: ${(props: any) => (props.collapsed ? "auto" : "100vw")};
     background-color: ${(props: any) => props.themeColor};
-    filter: invert(0.1) drop-shadow(0px -1px 5px rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    filter: invert(0.1);
 `;
 
 const StyledHeader = styled.h2`
