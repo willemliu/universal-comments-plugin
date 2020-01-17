@@ -18,6 +18,12 @@ or
 
 Open a web page and click the Extension icon to open the comments overlay.
 
+## Disable on your website
+
+You can easily disable the plugin on any page of your website by adding the following meta tag in your page head:
+
+`<meta name="uc:disabled" content="true"/>`
+
 ## Development
 
 ### Prerequisites
