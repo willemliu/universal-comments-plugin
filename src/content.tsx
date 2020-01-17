@@ -19,7 +19,13 @@ storage.sync.get(
         hideButtonOverlay: false
     },
     (items: any) => {
+        const disabledMeta = document.querySelector('meta[name="uc:disabled"]');
+        if (disabledMeta) {
+            items.enable = disabledMeta.getAttribute("content") !== "true";
+        }
+
         console.log("Universal Comments enabled", items.enable);
+
         if (items.enable) {
             // Render the read history widget
             const rootEl = document.createElement("section");
