@@ -20,25 +20,27 @@ function getCanonical() {
 }
 
 function App(props: any) {
-    const [canonical, setCanonical] = useState("");
+    const [canonical, setCanonical] = useState(getCanonical());
     const [themeColor, setThemeColor] = useState("#fff");
     const [opened, setOpened] = useState(props.opened || false);
 
     useEffect(() => {
-        const observer = new MutationObserver((mutationsList, observer) => {
-            if (canonical && getCanonical()) {
-                console.log(
-                    "URL changed?",
-                    canonical != getCanonical(),
-                    "canonical: ",
-                    canonical,
-                    "getCanonical: ",
-                    getCanonical()
-                );
-                setCanonical(getCanonical());
-            }
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
+        if (!canonical) {
+            const observer = new MutationObserver((mutationsList, observer) => {
+                if (canonical && getCanonical()) {
+                    console.log(
+                        "URL changed?",
+                        canonical != getCanonical(),
+                        "canonical: ",
+                        canonical,
+                        "getCanonical: ",
+                        getCanonical()
+                    );
+                    setCanonical(getCanonical());
+                }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+        }
     }, [canonical]);
 
     useEffect(() => {
@@ -51,8 +53,6 @@ function App(props: any) {
             }
         }
         setThemeColor(theme);
-
-        setCanonical(getCanonical());
 
         runtime.onMessage.addListener(
             (request: any, sender: any, sendResponse: any) => {
