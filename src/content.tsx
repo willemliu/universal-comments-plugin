@@ -16,7 +16,8 @@ const storage =
 storage.sync.get(
     {
         enable: true,
-        hideButtonOverlay: false
+        hideButtonOverlay: false,
+        overlayHeight: 50
     },
     (items: any) => {
         const disabledMeta = document.querySelector('meta[name="uc:disabled"]');
@@ -58,6 +59,7 @@ storage.sync.get(
                         themeColor={themeColor}
                         canonical={url}
                         hideButtonOverlay={items.hideButtonOverlay}
+                        overlayHeight={items.overlayHeight}
                     />
                 </>,
                 document.querySelector(".universal-comments-extension")

@@ -1,15 +1,21 @@
 const storage =
     typeof browser !== "undefined" ? browser.storage : chrome.storage;
 
+function preventSubmit() {
+    return false;
+}
+
 // Saves options to chrome.storage.sync.
 function saveOptions() {
     var enable = document.getElementById("enable").checked;
     var hideButtonOverlay = document.getElementById("hideButtonOverlay")
         .checked;
+    var overlayHeight = document.getElementById("overlayHeight").value;
     storage.sync.set(
         {
             enable,
-            hideButtonOverlay
+            hideButtonOverlay,
+            overlayHeight: Math.min(overlayHeight, 100)
         },
         function() {
             // Update status to let user know options were saved.
@@ -28,14 +34,25 @@ function restoreOptions() {
     storage.sync.get(
         {
             enable: true,
-            hideButtonOverlay: false
+            hideButtonOverlay: false,
+            overlayHeight: 50
         },
         function(items) {
             document.getElementById("enable").checked = items.enable;
             document.getElementById("hideButtonOverlay").checked =
                 items.hideButtonOverlay;
+            document.getElementById("overlayHeight").value = Math.min(
+                items.overlayHeight,
+                100
+            );
         }
     );
 }
-document.addEventListener("DOMContentLoaded", restoreOptions);
-document.getElementById("save").addEventListener("click", saveOptions);
+
+document.addEventListener("DOMContentLoaded", () => {
+    restoreOptions();
+    document.getElementById("save").addEventListener("click", saveOptions);
+    document
+        .querySelector("#optionsForm")
+        .addEventListener("submit", preventSubmit);
+});

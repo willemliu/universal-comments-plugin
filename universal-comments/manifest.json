@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Universal Comments",
-    "version": "0.12",
+    "version": "0.13",
     "description": "Take only memories, leave only comments",
     "author": "Willem Liu",
     "icons": {
