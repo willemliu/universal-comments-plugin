@@ -6,7 +6,7 @@ Take only memories, leave only comments.
 
 ### Installation Chrome and FireFox
 
--   FireFox: https://addons.mozilla.org/nl/firefox/addon/universal-comments/
+-   FireFox (Desktop & Android): https://addons.mozilla.org/nl/firefox/addon/universal-comments/
 
 -   Chrome: TBA
 
@@ -59,6 +59,17 @@ You can open the Circle Admin by clicking the ⚙️-icon next to the `Circle` s
 
 When you are on the Circle Admin page you can login with the account with which you post comments.
 You can create, delete, leave and join circles here.
+
+#### What are circles?
+
+Circles are enclosed areas in which only the invited are able to post and read comments.
+You can create circles as you please. After which you can invite other people to join your circle.
+Maybe you want to have separate circles for your family, friends and colleagues.
+
+Your comments intended for colleagues may be more formal or work-related and irrelevant for other people.
+Same goes for your comments in a circle of friends.
+
+With circles you can manage your circles as you please.
 
 ## Disable on your website
 
