@@ -2,15 +2,35 @@
 
 Take only memories, leave only comments.
 
+## Table of contents
+
+-   [Installation](#installation)
+    -   [FireFox](#firefox)
+    -   [Chrome](#chrome)
+        -   [Manually](#manually)
+-   [Usage](#usage)
+    -   [Extension options](#extension-options)
+    -   [Post comment](#post-comment)
+        -   [Reply](#reply)
+    -   [Comments Admin](#comment-admin)
+    -   [Circle Admin](#circle-admin)
+        -   [What are circles?](#what-are-circles)
+-   [Disable on your website](#disable-on-your-website)
+-   [Development](#development)
+    -   [Prerequisites](#prerequisites)
+    -   [Getting started](#getting-started)
+
 ## Installation
 
-### Installation Chrome and FireFox
+### FireFox
 
 -   FireFox (Desktop & Android): https://addons.mozilla.org/nl/firefox/addon/universal-comments/
 
+### Chrome
+
 -   Chrome: TBA
 
-or manually
+#### Manually
 
 1. In Chrome address bar type: chrome://extensions
 
