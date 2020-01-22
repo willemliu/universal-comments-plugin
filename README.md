@@ -4,15 +4,17 @@ Take only memories, leave only comments.
 
 ## Installation
 
-### Installation Chrome and Opera
+### Installation Chrome and FireFox
 
-1. In Chrome open the following URL and install the extension:
+-   FireFox: https://addons.mozilla.org/nl/firefox/addon/universal-comments/
 
-or
+-   Chrome: TBA
+
+or manually
 
 1. In Chrome address bar type: chrome://extensions
 1. Enable developer mode
-1. Drop the .crx file onto that page to install the extension.
+1. `Load unpacked` and select the `/universal-comments` folder
 
 ## Usage
 
