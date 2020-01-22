@@ -32,6 +32,16 @@ The following extension options can be set:
 
 `Overlay height (%)`: Comments overlay height as a percentage of the viewport (default: 50)
 
+### Post comment
+
+Once you're logged in you can post a comment using the form.
+
+![Comment form](https://github.com/willemliu/universal-comments-plugin/blob/master/screenshots/CommentForm.jpg?raw=true "Comment form")
+
+#### Reply
+
+You can directly reply to an existing comment by clicing on the 📥-icon at the bottom right corner of a comment.
+
 ### Comments Admin
 
 You can open the Comments Admin by clicking the cog icon next to the `Comments` label in the comments overlay.
