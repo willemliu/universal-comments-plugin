@@ -19,6 +19,7 @@ Take only memories, leave only comments.
 -   [Development](#development)
     -   [Prerequisites](#prerequisites)
     -   [Getting started](#getting-started)
+-   [Privacy policy](privacy.txt)
 
 ## Installation
 
