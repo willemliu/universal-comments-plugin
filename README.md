@@ -26,11 +26,9 @@ The following extension options can be set:
 
 ![Extension options](https://github.com/willemliu/universal-comments-plugin/blob/master/screenshots/options.jpg?raw=true "Extension options")
 
-`Enable`: uncheck to disable the plugin (default: checked)
-
-`Hide button overlay`: check to hide the `Universal Comments` button overlay. You can still toggle the comments overlay clicking the Extension icon. (default: unchecked)
-
-`Overlay height (%)`: Comments overlay height as a percentage of the viewport (default: 50)
+-   `Enable`: uncheck to disable the plugin (default: checked)
+-   `Hide button overlay`: check to hide the `Universal Comments` button overlay. You can still toggle the comments overlay clicking the Extension icon. (default: unchecked)
+-   `Overlay height (%)`: Comments overlay height as a percentage of the viewport (default: 50)
 
 ### Post comment
 
