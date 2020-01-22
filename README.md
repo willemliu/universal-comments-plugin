@@ -44,7 +44,7 @@ You can directly reply to an existing comment by clicing on the 📥-icon at the
 
 ### Comments Admin
 
-You can open the Comments Admin by clicking the cog icon next to the `Comments` label in the comments overlay.
+You can open the Comments Admin by clicking the ⚙️-icon next to the `Comments` label in the comments overlay.
 
 ![Comments Admin](https://github.com/willemliu/universal-comments-plugin/blob/master/screenshots/CommentsSettingsIcon.jpg?raw=true "Comments Admin")
 
@@ -53,7 +53,7 @@ Then all your comments are visible there and you have the option to remove the c
 
 ### Circle Admin
 
-You can open the Circle Admin by clicking the cog icon next to the `Circle` select-box in the comments overlay.
+You can open the Circle Admin by clicking the ⚙️-icon next to the `Circle` select-box in the comments overlay.
 
 ![Circle Admin](https://github.com/willemliu/universal-comments-plugin/blob/master/screenshots/CircleSettingsIcon.jpg?raw=true "Circle Admin")
 
