@@ -13,7 +13,9 @@ Take only memories, leave only comments.
 or manually
 
 1. In Chrome address bar type: chrome://extensions
+
 1. Enable developer mode
+
 1. `Load unpacked` and select the `/universal-comments` folder
 
 ## Usage
