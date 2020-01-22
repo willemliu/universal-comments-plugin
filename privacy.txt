@@ -5,7 +5,7 @@ Willem Liu ("us", "we", or "our") operates the Browser extension. This page info
 We use your Personal Information only for providing and improving the Extension. By using the Extension, you agree to the collection and use of information in accordance with this policy.
 
 Information Collection And Use
- While using our Extension, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name, email address, postal address and phone number ("Personal Information").
+ While using our Extension, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name, social media profile photo and email address ("Personal Information").
 Collected information is only used by our Extension to provide functionality or for statistical analysis. All collected information is never given or sold to a third party. Our site does not make use of any third party analytics tools/software for information collection. You retain the right to have us remove all your data in our possession.
 
 Security
