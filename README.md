@@ -41,6 +41,15 @@ You can open the Comments Admin by clicking the cog icon next to the `Comments` 
 When you are on the Comments Admin page you can login with the account with which you've posted comments.
 Then all your comments are visible there and you have the option to remove the comments.
 
+### Circle Admin
+
+You can open the Circle Admin by clicking the cog icon next to the `Circle` select-box in the comments overlay.
+
+![Circle Admin](https://github.com/willemliu/universal-comments-plugin/blob/master/screenshots/CircleSettingsIcon.jpg?raw=true "Circle Admin")
+
+When you are on the Circle Admin page you can login with the account with which you post comments.
+You can create, delete, leave and join circles here.
+
 ## Disable on your website
 
 You can easily disable the plugin on any page of your website by adding the following meta tag in your page head:
