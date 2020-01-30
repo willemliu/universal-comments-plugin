@@ -2,6 +2,12 @@
 
 Take only memories, leave only comments.
 
+A comment plugin which adds an overlay to the website you're visiting. The overlay allows you to submit comments to that specific page.
+Other people using this plugin can read your comments left on that page.
+
+You can create circles in which you can post comments. You can invite other people you know to join your circle. Only you and other members can see the comments posted there.
+This makes it possible to make separate circles for your colleagues, friends and family.
+
 ## Table of contents
 
 -   [Installation](#installation)
