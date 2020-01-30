@@ -5,6 +5,7 @@ Take only memories, leave only comments.
 ## Table of contents
 
 -   [Installation](#installation)
+    -   [Edge](#edge-chromium)
     -   [FireFox](#firefox)
     -   [Chrome](#chrome)
         -   [Manually](#manually)
