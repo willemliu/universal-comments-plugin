@@ -23,6 +23,10 @@ Take only memories, leave only comments.
 
 ## Installation
 
+### Edge (Chromium)
+
+-   Edge: https://microsoftedge.microsoft.com/addons/detail/fakkiidfllacbdkgokbdigommkhmoeil
+
 ### FireFox
 
 -   FireFox (Desktop & Android): https://addons.mozilla.org/nl/firefox/addon/universal-comments/
