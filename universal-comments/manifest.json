@@ -1,9 +1,14 @@
 {
     "manifest_version": 2,
     "name": "Universal Comments",
-    "version": "0.15",
+    "version": "0.17",
     "description": "Take only memories, leave only comments",
     "author": "Willem Liu",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{c96ced20-b8b0-46d8-81ed-32dd42e4bdfe}"
+        }
+    },
     "icons": {
         "48": "48x48.png",
         "64": "64x64.png",
@@ -28,7 +33,7 @@
     },
     "background": {
         "scripts": ["background.js"],
-        "persistent": true
+        "persistent": false
     },
     "permissions": [
         "https://beurs.acc.fd.nl/",
@@ -37,11 +42,12 @@
         "https://fd.nl/",
         "http://*/*",
         "https://*/*",
-        "storage"
+        "storage",
+        "tabs"
     ],
     "options_ui": {
         "page": "options.html",
-        "chrome_style": true
+        "browser_style": true
     },
     "content_scripts": [
         {

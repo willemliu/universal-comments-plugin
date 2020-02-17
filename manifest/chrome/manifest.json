@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Universal Comments",
-    "version": "0.15",
+    "version": "0.17",
     "description": "Take only memories, leave only comments",
     "author": "Willem Liu",
     "icons": {
@@ -28,7 +28,7 @@
     },
     "background": {
         "scripts": ["background.js"],
-        "persistent": true
+        "persistent": false
     },
     "permissions": [
         "https://beurs.acc.fd.nl/",
@@ -37,7 +37,8 @@
         "https://fd.nl/",
         "http://*/*",
         "https://*/*",
-        "storage"
+        "storage",
+        "tabs"
     ],
     "options_ui": {
         "page": "options.html",
