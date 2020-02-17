@@ -40,7 +40,7 @@ This makes it possible to make separate circles for your colleagues, friends and
 
 ### Chrome
 
--   Chrome: TBA
+-   Chrome: https://chrome.google.com/webstore/detail/universal-comments/edoooaibkkjcnojedjhplakgaemchoeb
 
 #### Manually
 
