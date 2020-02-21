@@ -74,6 +74,18 @@ Once you're logged in you can post a comment using the form.
 
 You can directly reply to an existing comment by clicing on the 📥-icon at the bottom right corner of a comment.
 
+#### Remove
+
+You can remove your own comment by clicking the ☠️-icon at the top right corner of a comment.
+
+#### Edit
+
+You can edit your own comment by clicking the ✏️-icon at the bottom right corner of a comment.
+
+#### View changes
+
+You can view the changes of any comment by the result of an edit compared to the original by clicking the 📜-icon at the top right corner of a comment.
+
 ### Comments Admin
 
 You can open the Comments Admin by clicking the ⚙️-icon next to the `Comments` label in the comments overlay.
