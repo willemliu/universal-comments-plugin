@@ -16,7 +16,7 @@ storage.sync.get(
     {
         enable: true,
         hideButtonOverlay: false,
-        overlayHeight: 50
+        overlayHeight: 50,
     },
     (items: any) => {
         const disabledMeta = document.querySelector('meta[name="uc:disabled"]');
@@ -51,6 +51,6 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     left: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 9999;
 }
 `;

@@ -1,14 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Universal Comments",
-    "version": "0.17",
+    "version": "0.18",
     "description": "Take only memories, leave only comments",
     "author": "Willem Liu",
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "{c96ced20-b8b0-46d8-81ed-32dd42e4bdfe}"
-        }
-    },
     "icons": {
         "48": "48x48.png",
         "64": "64x64.png",
@@ -47,7 +42,7 @@
     ],
     "options_ui": {
         "page": "options.html",
-        "browser_style": true
+        "chrome_style": true
     },
     "content_scripts": [
         {
