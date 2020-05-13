@@ -63,6 +63,7 @@ The following extension options can be set:
 -   `Enable`: uncheck to disable the plugin (default: checked)
 -   `Hide button overlay`: check to hide the `Universal Comments` button overlay. You can still toggle the comments overlay clicking the Extension icon. (default: unchecked)
 -   `Keep URL Parameters`: Check to keep URL Parameters of the page you're commenting on (default: unchecked)
+
     This is useful if the website you're visiting uses URL Parameters to differentiate between pages. E.g.
 
     -   www.example.com?page=this_is_a_page
