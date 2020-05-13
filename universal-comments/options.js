@@ -8,6 +8,7 @@ function preventSubmit() {
 // Saves options to chrome.storage.sync.
 function saveOptions() {
     var enable = document.getElementById("enable").checked;
+    var keepUrlParams = document.getElementById("keepUrlParams").checked;
     var hideButtonOverlay = document.getElementById("hideButtonOverlay")
         .checked;
     var overlayHeight = document.getElementById("overlayHeight").value;
@@ -15,13 +16,14 @@ function saveOptions() {
         {
             enable,
             hideButtonOverlay,
-            overlayHeight: Math.min(overlayHeight, 100)
+            keepUrlParams,
+            overlayHeight: Math.min(overlayHeight, 100),
         },
-        function() {
+        function () {
             // Update status to let user know options were saved.
             var status = document.getElementById("status");
             status.textContent = "Options saved.";
-            setTimeout(function() {
+            setTimeout(function () {
                 status.textContent = "";
             }, 750);
         }
@@ -34,11 +36,14 @@ function restoreOptions() {
     storage.sync.get(
         {
             enable: true,
+            keepUrlParams: false,
             hideButtonOverlay: false,
-            overlayHeight: 50
+            overlayHeight: 50,
         },
-        function(items) {
+        function (items) {
             document.getElementById("enable").checked = items.enable;
+            document.getElementById("keepUrlParams").checked =
+                items.keepUrlParams;
             document.getElementById("hideButtonOverlay").checked =
                 items.hideButtonOverlay;
             document.getElementById("overlayHeight").value = Math.min(

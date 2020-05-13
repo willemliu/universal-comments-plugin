@@ -6,37 +6,51 @@ import { lightOrDark } from "../utils/lightOrDark";
 declare var chrome: any;
 declare var browser: any;
 
+interface Props {
+    hideButtonOverlay?: boolean;
+    keepUrlParams?: boolean;
+    opened?: boolean;
+    overlayHeight?: number;
+}
+
 const runtime =
     typeof browser !== "undefined" ? browser.runtime : chrome.runtime;
 
-function getCanonical() {
+function getCanonical(keepUrlParams?: boolean) {
     const canonical = document.querySelector('link[rel="canonical"]');
-    return canonical
-        ? canonical.getAttribute("href") || "about:blank"
-        : window.location.origin +
-              (window.location.pathname.length > 1
-                  ? window.location.pathname
-                  : "");
+    if (canonical) {
+        return canonical.getAttribute("href") || "about:blank";
+    } else if (keepUrlParams) {
+        return window.location.href;
+    } else {
+        return (
+            window.location.origin +
+            (window.location.pathname.length > 1
+                ? window.location.pathname
+                : "")
+        );
+    }
 }
 
-function App(props: any) {
-    const [canonical, setCanonical] = useState(getCanonical());
+function App(props: Props) {
+    const [canonical, setCanonical] = useState(
+        getCanonical(props.keepUrlParams)
+    );
     const [themeColor, setThemeColor] = useState("#fff");
     const [opened, setOpened] = useState(props.opened || false);
-
     useEffect(() => {
         if (!canonical) {
             const observer = new MutationObserver((mutationsList, observer) => {
-                if (canonical && getCanonical()) {
+                if (canonical && getCanonical(props.keepUrlParams)) {
                     console.log(
                         "URL changed?",
-                        canonical != getCanonical(),
+                        canonical != getCanonical(props.keepUrlParams),
                         "canonical: ",
                         canonical,
                         "getCanonical: ",
-                        getCanonical()
+                        getCanonical(props.keepUrlParams)
                     );
-                    setCanonical(getCanonical());
+                    setCanonical(getCanonical(props.keepUrlParams));
                 }
             });
             observer.observe(document.body, { childList: true, subtree: true });

@@ -16,6 +16,7 @@ storage.sync.get(
     {
         enable: true,
         hideButtonOverlay: false,
+        keepUrlParams: false,
         overlayHeight: 50,
     },
     (items: any) => {
@@ -23,10 +24,13 @@ storage.sync.get(
         if (disabledMeta) {
             items.enable = disabledMeta.getAttribute("content") !== "true";
         }
-
         console.log("Universal Comments enabled", items.enable);
 
         if (items.enable) {
+            console.log(
+                "Universal Comments keep URL parameters",
+                items.keepUrlParams
+            );
             const rootEl = document.createElement("section");
             rootEl.setAttribute("class", "universal-comments-extension");
             document.body.appendChild(rootEl);
@@ -36,6 +40,7 @@ storage.sync.get(
                     <GlobalStyle />
                     <App
                         hideButtonOverlay={items.hideButtonOverlay}
+                        keepUrlParams={items.keepUrlParams}
                         overlayHeight={items.overlayHeight}
                     />
                 </>,
