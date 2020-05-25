@@ -93,6 +93,12 @@ You can edit your own comment by clicking the ✏️-icon at the bottom right co
 
 You can view the changes of any comment by the result of an edit compared to the original by clicking the 📜-icon at the top right corner of a comment.
 
+#### Receive e-mail notifications
+
+When this option is checked you'll receive e-mail notifications whenever a new comment has been posted for the page you've previously left a comment.
+
+If the option is unchecked then you will no longer receive **any** e-mail notifications from `Universal Comments`.
+
 ### Comments Admin
 
 You can open the Comments Admin by clicking the ⚙️-icon next to the `Comments` label in the comments overlay.
