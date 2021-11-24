@@ -1,3 +1,5 @@
+> :exclamation: **DEPRECATED** :exclamation: : Will no longer work after [Manifest v3](https://developer.chrome.com/docs/extensions/mv3/intro/) rolled out.
+
 # universal-comments-extension
 
 Take only memories, leave only comments.
@@ -10,37 +12,37 @@ This makes it possible to make separate circles for your colleagues, friends and
 
 ## Table of contents
 
--   [Installation](#installation)
-    -   [Edge](#edge-chromium)
-    -   [FireFox](#firefox)
-    -   [Chrome](#chrome)
-        -   [Manually](#manually)
--   [Usage](#usage)
-    -   [Extension options](#extension-options)
-    -   [Post comment](#post-comment)
-        -   [Reply](#reply)
-    -   [Comments Admin](#comment-admin)
-    -   [Circle Admin](#circle-admin)
-        -   [What are circles?](#what-are-circles)
--   [Disable on your website](#disable-on-your-website)
--   [Development](#development)
-    -   [Prerequisites](#prerequisites)
-    -   [Getting started](#getting-started)
--   [Privacy policy](privacy.txt)
+- [Installation](#installation)
+  - [Edge](#edge-chromium)
+  - [FireFox](#firefox)
+  - [Chrome](#chrome)
+    - [Manually](#manually)
+- [Usage](#usage)
+  - [Extension options](#extension-options)
+  - [Post comment](#post-comment)
+    - [Reply](#reply)
+  - [Comments Admin](#comment-admin)
+  - [Circle Admin](#circle-admin)
+    - [What are circles?](#what-are-circles)
+- [Disable on your website](#disable-on-your-website)
+- [Development](#development)
+  - [Prerequisites](#prerequisites)
+  - [Getting started](#getting-started)
+- [Privacy policy](privacy.txt)
 
 ## Installation
 
 ### Edge (Chromium)
 
--   Edge: https://microsoftedge.microsoft.com/addons/detail/fakkiidfllacbdkgokbdigommkhmoeil
+- Edge: https://microsoftedge.microsoft.com/addons/detail/fakkiidfllacbdkgokbdigommkhmoeil
 
 ### FireFox
 
--   FireFox (Desktop & Android): https://addons.mozilla.org/nl/firefox/addon/universal-comments/
+- FireFox (Desktop & Android): https://addons.mozilla.org/nl/firefox/addon/universal-comments/
 
 ### Chrome
 
--   Chrome: https://chrome.google.com/webstore/detail/universal-comments/edoooaibkkjcnojedjhplakgaemchoeb
+- Chrome: https://chrome.google.com/webstore/detail/universal-comments/edoooaibkkjcnojedjhplakgaemchoeb
 
 #### Manually
 
@@ -60,16 +62,16 @@ The following extension options can be set:
 
 ![Extension options](https://github.com/willemliu/universal-comments-plugin/blob/master/screenshots/options.jpg?raw=true "Extension options")
 
--   `Enable`: uncheck to disable the plugin (default: checked)
--   `Hide button overlay`: check to hide the `Universal Comments` button overlay. You can still toggle the comments overlay clicking the Extension icon. (default: unchecked)
--   `Keep URL Parameters`: Check to keep URL Parameters of the page you're commenting on (default: unchecked)
+- `Enable`: uncheck to disable the plugin (default: checked)
+- `Hide button overlay`: check to hide the `Universal Comments` button overlay. You can still toggle the comments overlay clicking the Extension icon. (default: unchecked)
+- `Keep URL Parameters`: Check to keep URL Parameters of the page you're commenting on (default: unchecked)
 
-    This is useful if the website you're visiting uses URL Parameters to differentiate between pages. E.g.
+  This is useful if the website you're visiting uses URL Parameters to differentiate between pages. E.g.
 
-    -   www.example.com?page=this_is_a_page
-    -   www.example.com?page=this_is_another_page
+  - www.example.com?page=this_is_a_page
+  - www.example.com?page=this_is_another_page
 
--   `Overlay height (%)`: Comments overlay height as a percentage of the viewport (default: 50)
+- `Overlay height (%)`: Comments overlay height as a percentage of the viewport (default: 50)
 
 ### Post comment
 
@@ -146,5 +148,5 @@ You can easily disable the plugin on any page of your website by adding the foll
 1. Run `npm i` to install dependencies
 1. Run `npm run webpack` to build the plugin
 1. Run `npm run release:...` to copy the correct manifest to the assets folder
-    1. For Chrome run: `npm run release:chrome`
-    1. For FireFox run: `npm run release:firefox`
+   1. For Chrome run: `npm run release:chrome`
+   1. For FireFox run: `npm run release:firefox`
